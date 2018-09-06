@@ -12,7 +12,7 @@
 ##移动端屏幕的适配
   　<meta name="viewport" content="width=device-width"><br>
     meta viewport 中有6个通用属性：<br>
-      width 设置layout viewport的宽度 正整数或字符串 'width-device'<br>
+      <br>width 设置layout viewport的宽度 正整数或字符串 'width-device'<br>
       initial-scale 设置页面的初始缩放值，数字或小数<br>
       minimum-scale 允许用户的最小缩放值 数字或小数<br>
       maximum-scale 允许用户的最大缩放值 数字或小数<br>
