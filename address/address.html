@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>收货地址</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=1.0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="./js/flexible.js"></script>
+	<script src="./js/jquery.js"></script>
+</head>
+<style type="text/css">
+body,div ,.content,style,.shouhuoren,span{
+	margin:0;
+	padding: 0;
+}
+html {
+	height: 720px;
+}
+	.address-all {
+		height: 160px;
+		background-color: #f7f7f7;
+		
+	}
+	.address-text {
+		height: 50px;
+		color: #9a9a9a;
+		font-size: 13px;
+		line-height: 50px;
+		margin-left: 10px;
+	}
+	.new-address {
+		height: 90px;
+		background-color: #fff;
+	}
+	.xinxi {
+		margin-left: 20px;
+		width: 320px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #e4e4e4;
+		margin-bottom: 5px;
+		padding-top: 18px;
+	}
+	.shouhuoren {
+		font-size: 15px;
+		color: #5c5c5c;
+		
+	}
+	.name {
+		font-size: 15px;
+		color: #5c5c5c;
+		margin-left: 5px;
+	}
+	.phone {
+		font-size: 15px;
+		color: #5c5c5c;
+		margin-left: 5px;
+	}
+	.address {
+		margin-left: 20px;
+		width: 310px;
+		padding-bottom: 5px;
+		font-size: 15px;
+		color: #5c5c5c;
+		
+	}
+	.content {
+		height:350px;
+		background-color: #fff;
+
+	}
+	.content .one {
+		height: 45px;
+		background-color: rgb(255,255,255);
+		position: relative;
+	}
+	.douban {
+		font-size: 14px;
+		color: #5c5c5c;
+		position: absolute;
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	.content .two {
+		height: 106px;
+		margin-top: 5px;
+		background-color: #fff;
+		position: relative;
+	}
+	a {
+		text-decoration: none;
+	}
+	.logo {
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		left: 10px;
+	}
+	.logo img {
+		width: 70px;
+		height: 70px;
+		margin-top: 10px;
+	}
+	.desc {
+		display: inline-block;
+		position: absolute;
+		margin-left: 92px;
+		height: 92px;
+		margin-top: 14px;
+	}
+	.desc .shoucang {
+		font-size: 14px;
+		color: #5c5c5c;
+		display: inline-block;
+	}
+	.desc .color {
+		margin-top:10px;
+		font-size: 14px;
+		color: #9a9a9a;
+	}
+	.jian {
+   		color: #9a9a9a;
+   		font-size: 14px;
+    }
+    .num-all {
+   		
+   		display: inline-block;
+    }
+   .num {
+   		padding:0 8px;
+   		color: #9a9a9a;
+	}
+   	.price {
+   		display: inline-block;
+   		font-size: 15px;
+   		color: #9a9a9a;
+   		margin-left: 115px;
+   	}
+   	.border {
+   		height: 5px;
+   		background-color: #f7f7f7;
+   	}
+   	._2mVCVeRV {
+   		border-bottom:1px solid  #f7f7f7;
+   		height: 45px;
+   		line-height: 45px;
+   	}
+   	._2mVCVeRV span{
+   		font-size: 14px;
+   		font-style: normal;
+   		color: #505050;
+   		margin-left: 10px;
+   	}
+   	._2mVCVeRV em{
+   		font-size: 14px;
+   		font-style: normal;
+   		margin-left: 205px;
+   		color: #505050;
+   	}
+    ._2mVCVeRV .price {
+    	font-size: 14px;
+   		font-style: normal;
+   		margin-left: 265px;
+   		color: #505050;
+    }
+    .border-two {
+    	height: 50px;
+    	background-color: #f7f7f7;
+    	font-size: 13px;
+    	position: relative;
+
+    }
+    .pay {
+    	position: absolute;
+    	margin-top: 22px;
+    	margin-left: 10px;
+    }
+    .weixin img{
+    	width: 25px;
+    	height: 29px;
+    	margin-left: 10px;
+    	margin-top: 8px;
+    }
+    .text {
+    	font-size: 14px;
+    	color: #5c5c5c;
+    	position: absolute;
+    	height: 30px;
+    	margin-left: 8px;
+
+    }
+    ._2m {
+    	border:1px solid #e4e4e4;
+   		height: 45px;
+   		line-height: 45px;
+    }
+    .border-three {
+    	height: 30px;
+    	background-color: #f7f7f7;
+
+    }
+    .bottom-all {
+		position: fixed;
+		bottom:0px;
+		height: 55px;
+		width: 100%;
+		background-color:#fff;
+		z-index: 500;
+	}
+	.bottom {
+		position: relative;
+		bottom:0px;
+		height: 55px;
+		width: 100%;
+		background-color:#fff;
+		z-index: 500;
+	}
+	.gouwuche-num {
+		display: inline-block;
+		font-size: 16px;
+		color: #5c5c5c;
+		margin-top: 15px;
+		margin-left: 10px;
+
+	}
+	.shuliang {
+		position: absolute;
+		font-size: 16px;
+		top:16px;
+		color: red;
+
+	}
+	.quickly {
+		width: 105px;
+		height: 55px;
+		background-color: red;
+		display: inline-block;
+		position: absolute;
+		color: #fff;	
+		font-size: 15px;
+		text-align: center;
+		line-height: 55px;
+		margin-left:212px;
+		
+	}
+
+
+
+
+
+
+
+
+	
+</style>
+<div class="address-all">
+	<div class="address-text">
+		<span>收货地址</span>
+	</div>
+	<div class="new-address">
+		<div class="xinxi">
+			<span class="shouhuoren">收货人:</span>
+			<span class="name">王莹</span>
+			<span class="phone">13604463883</span>
+
+		</div>
+		<div class="address">
+			吉林省/吉林市/龙潭区/北华大学北校区
+		</div>
+	</div>
+</div>
+<div class="content">
+	<div class="one">
+			
+			<span class="douban">豆瓣市集</span>
+		</div>
+		<div class="two">
+			
+				<a class="logo" href="https://market.douban.com/campaign/collection">
+					<img src="https://img3.doubanio.com/view/dianpu_product_item/small/public/p1956124.jpg">
+				</a>
+			<div class="desc">
+				<div class="shoucang">精品挂耳咖啡</div>
+				
+				<div class="color">甜橙庄园</div>
+				<div class="num-all">
+					<span class="jian">数量：</span>
+					<span class="num">1</span>
+						
+				</div>
+				<div class="price">￥56.00</div>
+			</div>
+		</div>
+		<div class="border"></div>
+		<div class="_2mVCVeRV">
+			<span class="_3WtqowM8">优惠券</span>
+			<em>暂无可用优惠券</em>
+		</div>
+		<div class="_2mVCVeRV">
+			<span class="_3WtqowM8">小计</span>
+			<em class="price">￥56.00</em>
+		</div>
+		<div class="border"></div>
+		<div class="_2mVCVeRV">
+			<span class="_3WtqowM8">运费</span>
+			<em class="price">￥10.00</em>
+		</div>
+
+</div>
+	<div class="border-two">
+		<div class="pay">选择支付方式</div>
+	</div>
+	<div class="_2m">
+			<span class="weixin">
+				<img src="./img/2.png">
+			</span>
+			<span class="text">使用微信支付</span>
+			
+	</div>
+	<div class="_2m">
+			<span class="weixin">
+				<img src="./img/3.png">
+			</span>
+			<span class="text">使用支付宝支付</span>
+			
+	</div>
+	<div class="border-three">
+		
+	</div>
+	<div class="bottom-all">
+		<div class="bottom">
+			<div class="gouwuche-num">
+				应付：
+				
+			</div>
+			<span class="shuliang">￥66</span>
+			
+			<div class="quickly">
+				提交订单
+			</div>
+		</div>
+	</div>
+<body>
+
+
+</body>
+</html>

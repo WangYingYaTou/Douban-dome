@@ -1,0 +1,545 @@
+html,body,.head,ul ,li,.img-scroll,a,p,div,span,.product-card-tag ,.product-card-tags,dl,dd,dt{
+	margin:0;
+	padding:0;
+
+}
+body{
+	
+	background-color:#f7f7f7;
+}
+.clearfix{
+	content:"";
+	height: 0;
+	clear: both;
+	display: block;
+}
+.head{
+	/*width:10rem;*/
+	height:5rem;
+	/*background-color: red;*/
+	margin:0 auto;
+}
+.img-scroll{
+	width:10rem;
+	height:5rem;
+   	position: relative;
+	margin:0 auto;
+	overflow: hidden;
+}
+.img-scroll img{
+	width:10rem;
+	height:5rem;
+}
+.img-scroll ul{
+	list-style: none;
+	position: absolute;
+	top: 0px;
+	left:-10rem;
+	width:50rem;
+}
+.img-scroll ul li{
+	float: left;
+	list-style: none;
+	width: 10rem;
+	height:5rem;
+
+}
+.user-bar{
+	/*width: 10rem;*/
+	height: 1.2rem;
+	background-color: #fff;
+	margin-top: 0.5rem;
+	position: relative;
+}
+.border{
+	height: 0.9rem;
+	margin-top: 0.13rem;
+	position: absolute;
+	color:black;
+	display: block;
+    width: 0;
+    border: 0.026rem solid #e4e4e4;
+    margin-left: 5.06rem;
+}
+
+.user-bar-left{
+	float: left;
+	width: 5rem;
+	height: 1.2rem;
+}
+.user-bar-left a{
+	float: left;
+	width: 5rem;
+	height: 1.2rem;
+}
+.user-bar-left .img-left{
+	width: 1rem;
+	height:1rem;
+	margin-top:8px;
+	margin-left: 1.333rem;
+	position: absolute;
+
+}
+.user-bar-left .gouwuche{
+	font-size: 0.453rem;
+    color: #5c5c5c;
+    position: absolute;
+	margin-left: 2.13rem;
+	margin-top:0.266rem;
+}
+.user-bar-right{
+	float:right;
+	width: 4.8rem;
+	height: 1.2rem;
+	margin-top: -1.226666rem;
+
+}
+.user-bar-right .img-right{
+	width: 0.8rem;
+	height:1rem;
+	margin-top:8px;
+	margin-left:0.8rem;
+	float: left;
+}
+.user-bar-right .shiji{
+	font-size: 0.453rem;
+    color: #5c5c5c;
+    margin-top: 0.3rem;
+	float: left;
+}
+.list-content{
+	height: 32rem;
+	background-color: #fff;
+}
+.list-head{
+	height: 1.093rem;
+	margin-top: 0.66em;
+	background-color:#fff;
+	font-size:0.4rem;
+    line-height:1.093rem;
+    padding: 0.266rem 0.4rem;
+    color: #46a68f;
+}
+
+.product-card{
+	/*width: 9.2rem;*/
+	height: 3.2rem;
+	display: block;
+    margin: 0 0.4rem 0.8rem;
+    background-color: #fff;
+    margin-left: 0.0266rem;
+    position: relative;
+}
+
+.product-card a{
+	/*width: 9.2rem;*/
+	height: 3.2rem;
+	display: block;
+    margin: 0 0.4rem 0.8rem;
+    background-color: #fff;
+    margin-left: -0.0266rem;
+}
+a{
+   text-decoration: none;
+}
+.coffee{
+	width:3.2rem;
+	height: 3.2rem;
+	position: absolute;
+	background-image: url(https://img3.doubanio.com/img/files/file-1523413316-0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   	left:0px;
+}
+.coffee1{
+	width:3.2rem;
+	height: 3.2rem;
+	float: left;
+	background-image: url(https://img3.doubanio.com/img/files/file-1522048538-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.coffee2{
+	background-image: url(https://img3.doubanio.com/img/files/file-1522048538-1.jpg);
+	width:3.2rem;
+	height: 3.2rem;
+	float: left;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.coffee3{
+	background-image: url(https://img3.doubanio.com/img/files/file-1522048538-4.jpg);
+	width:3.2rem;
+	height: 3.2rem;
+	float: left;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.coffee-info{
+	padding-left: 135px;
+	padding-top: 15px;
+	width:5.866rem;
+	height:3.04rem;
+	margin-top: 0.4rem;
+}
+.product-card .product-card-title {
+    font-size: 0.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #494949;
+    margin-bottom: 0.106rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-card .product-card-desc{
+    margin-top: 0.08rem;
+    font-size: 0.346rem;
+    line-height: 1.5;
+    color: #9a9a9a;
+    white-space: normal;
+}
+
+
+.product-card .product-card-promote {
+    font-size:0.4rem;
+    color: #f05f50;
+    margin-right: 0.24rem;
+}
+.product-card .product-card-tags{
+	position: relative;
+}
+
+.product-card .product-card-tags .product-card-tag {
+    font-size: 0.32rem;
+   	color: #fff;
+    display: inline-block;
+    padding: 0 0.133rem;
+    position: absolute;
+    top:0;
+   	margin-right:  0.133rem;
+}
+
+.group{
+	/*width: 10rem;*/
+	height:510px;
+	background-color: #fff;
+	margin-top: 2rem;
+}
+.group-head{
+	/*width: 10rem;*/
+	height: 1rem;
+	margin-top: 0.66em;
+	background-color:#fff;
+	font-size:0.4rem;
+    line-height:1.093rem;
+    padding: 0.266rem 0.4rem;
+    color: #46a68f;
+}
+.group-topic-list{
+	/*width: 10rem;*/
+	height:12rem;
+	
+}
+.group-topic-item{
+	/*width: 10rem;*/
+	height: 3.173rem;
+	padding:0.213rem;
+	border-bottom: 0.026rem solid #f7f7f7;
+   
+}
+.group-topic-content{
+	/*width: 9.2rem;*/
+	height: 1.253rem;
+}
+.group-topic-hot{
+	width: 0.96rem;
+	height:1.253rem;
+	float: left;
+	padding-right: 0.533rem;
+    position: relative;
+    z-index: 1;
+    top: 0.053rem;
+}
+.group-topic-list .group-topic-hot .mui-icon {
+   
+    width:0.533rem;
+    height:0.533rem;
+    float: left;
+    margin-left: 0.133rem;
+}
+.group-topic-list .group-topic-hot em{
+    display: block;
+    width: 0.373rem;
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 0.32rem;
+    padding-top:0.853rem;
+    margin-left:0.133rem;
+}
+.group-topic-list .group-topic-title {
+    font-size:0.4rem;
+    line-height: 1.4;
+    color: #494949;
+    font-weight: 1;
+    width: 6.906rem;
+    height: 1.253rem;
+
+   }
+.group-topic-img{
+   	background-image:url(https://img1.doubanio.com/view/group_topic/large/public/p111219547.jpg);
+	background-repeat:no-repeat;
+	display: inline-block;
+    width:1.2rem;
+    height:1.2rem;
+    background-size: 100%;
+    background-position: 50%;
+    margin-top: -1.733rem;
+    float: right;
+    
+}
+.group-topic-poster{
+	float:left;
+	width:1.946rem;
+	height: 0.56rem;
+	color:#9a9a9a;
+	font-size: 0.32rem;
+	margin-top: 0.266rem;
+	margin-left:1.6rem;
+	line-height: 0.533rem;
+	position: relative;
+
+}
+.group-topic-poster img{
+	border-radius: 50%;
+	width: 0.533rem;
+	height:0.533rem;
+	margin-top: 0.133rem;
+}
+.group-topic-poster .douban{
+	width:1.28rem;
+	height: 0.373rem;
+	position: absolute;
+	margin-top: 0.133rem;
+	margin-left: 0.133rem;
+}
+.group-topic-more{
+	background-color: #fff;
+    /*width: 10rem;*/
+    height:1.04rem;
+}
+.group-topic-more a{
+	margin-left: 4rem;
+    font-size:0.346rem;
+    color:#9a9a9a;
+    padding:0.266rem 0;
+    width:2.08rem;
+    height:0.453rem;
+
+
+}
+.topics{
+	/*width: 10rem;*/
+	height: 40.61rem;
+	margin-top: 0.533rem;''
+}
+.topics .topics-header{
+	/*width: 10rem;*/
+	height: 1rem;
+	margin-top: 0.66em;
+	background-color:#fff;
+	font-size:0.4rem;
+    line-height:1.093rem;
+    padding: 0.266rem 0.4rem;
+    color: #46a68f;
+    background-color: #fff;
+
+}
+.all{
+	/*width: 10rem;*/
+	height: 10.67rem;
+
+}
+.all ul{
+	list-style: none;
+}
+.all .topic-item{
+	/*width: 10rem;*/
+	height: 5.413rem;
+	background-color: #fff;
+	
+}
+._3kP-rt0_{
+	/*width: 10rem;*/
+	height: 3.34rem;
+	background-image: url(https://img3.doubanio.com/img/files/file-1520332486-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+._3kP-rt1_{
+	/*width: 10rem;*/
+	height: 3.34rem;
+	background-image: url(https://img3.doubanio.com/img/files/file-1517992833-0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+._3kP-rt2_{
+	background-image: url(https://img3.doubanio.com/img/files/file-1515387415-1.jpg);
+	/*width: 10rem;*/
+	height:  3.34rem;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.topic-content{
+	height:1.68rem;
+	padding: 0.267rem 0.4rem;
+}
+.topic-title{
+	font-size:0.4rem;
+    line-height: 1.4;
+    color: #4f4f4f;
+    font-weight: 600;
+    margin-bottom: 0.106rem;
+}
+.topic-desc{
+	font-size: 0.346rem;
+    line-height: 1.4;
+    color: #5c5c5c;
+
+}
+.all .topic-item1{
+	/*width: 10rem;*/
+	height:5.6rem;
+	background-color: #fff;
+	margin-top:0.533rem;
+	
+}
+.footer-bar{
+	/*width: 10rem;*/
+	height: 1.2rem;
+	margin-top:0.533rem;
+	background-color: #fff;
+}
+.footer-bar-item{
+	width:3.315rem;
+	height: 1.2rem;
+	position: relative;
+	float: left;
+}
+
+.footer-bar-item .mui-icon img{
+	width:0.463rem;
+	height:0.4rem;
+	margin-left:0.66rem;
+	margin-top:0.373rem;
+	position: absolute;
+	
+}
+.footer-bar-item em{
+	font-size: 0.373rem;
+    color: #9a9a9a;
+    font-style: normal;
+    margin-top: 0.32rem;
+    margin-left:1.2rem;
+    position: absolute;
+
+
+}
+.qqq {
+  		position:fixed;
+  		height: 50px;
+  		background-color: pink;
+  		bottom:2px;
+  		z-index: 200;
+  		font-size: 15px;
+  		color: green;
+  		text-align: center;
+
+  	}
+.ddd{
+  		width: 100%;
+  		height: 100%;
+  		background-color: rgba(0,0,0,0.5);
+  		position: absolute;
+  		overflow-y: scroll;
+  		top:0;
+  	}
+.foot-bar {
+  		width: 300px;
+  		height:350px;
+  		background-color: white;
+  		position: fixed;
+  		top:100px;
+  		left: 30px;
+  		overflow: scroll;
+
+  			
+  		}
+  		.market {
+  			height: 250px;
+  			width: 250px;
+  			position: relative;
+  			color: #494949;
+  			text-align: center;
+  			/*background-color: pink;*/
+  			margin: 0 auto;
+  			margin-top: 30px;
+  			overflow-y: scroll;
+  			padding-bottom: 5px;
+
+  		}
+  		.gengduo {
+  			width: 97px;
+  			height: 40px;
+  			background-color: #0aa082;
+  			color: #fff;
+  			font-size: 15px;
+  			text-align: center;
+  			line-height: 40px;
+  			margin-top: 8px;
+  			margin-left: 95px;
+  			/*border-radius: 7%;*/
+  		}
+  		dl {
+  			width: 250px;
+  			height: 146px;
+  			/*background-color: yellow;*/
+  			text-align: left;
+  		}
+  		.market dt{
+  			font-size: 15px;
+    		margin-bottom: 10px;
+    		font-weight: 700;
+
+  		}
+  		.market dd{
+  			font-size: 13px;
+  			text-align: left;
+  		}
+  		.hide {
+  			display: none;
+  		}
+  		.show {
+
+  			display: block;
+
+  		}
+
+
+
+
+
+
+   
+  

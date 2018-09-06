@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<script type="text/javascript" src="./flexible.js"></script>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+</head>
+<style type="text/css">
+body,html,div,.wrap{
+	margin:0;
+	padding: 0;
+}
+	.wrap{
+		width: 10rem;
+		height:9.76rem;
+		margin-top:1.2rem;
+    	max-width:20rem;
+    	margin:0 auto;
+    	padding-left: 0.36rem;
+    	padding-right: 0.736rem;
+    	background-color: #fff;
+
+	}
+	.logo{
+		width:8.13rem;
+		height: 3.2rem;
+		margin-top:1.2rem;
+    	margin-bottom:1.2rem;
+   		text-align: center;
+	}
+	.logo img{
+		width: 1.6rem;
+		height: 1.6rem;
+		vertical-align: middle;
+    	display: inline-block;
+    	text-align: center;
+    	line-height: center;
+    	margin-top: 0.506rem;
+    	margin-left: 45px;
+	}
+	.main{
+		width: 8.13rem;
+		height: 3.893rem;
+	}
+	.wechat-form {
+	    display: block;
+	    margin-top: 0em;
+	    height: 3.893rem;
+	    width: 8.13rem;
+	    margin-left: 25px;
+	}
+	.field{
+		width: 8.13rem;
+		height:1.226rem;
+		padding-top:0.133rem;
+	    border-bottom: 0.026rem solid #BDBDBD;
+	   	font-size: 0.4rem;
+	    font-family: sans-serif;
+	}
+	.field .name{
+		height: 0.933rem;
+	    line-height:0.933rem;
+	    color: rgb(125,125,125);
+	    border:1px solid  #BDBDBD;
+	    width: 100%;
+	    display: block;
+	    color: inherit;
+	    font: inherit;
+	    margin: 0;
+	    padding-left: 10px;
+    }
+    .field .phone{
+		height: 0.933rem;
+	    line-height:0.933rem;
+	    color: rgb(125,125,125);
+	    border:1px solid  #BDBDBD;
+	    width: 100%;
+	    display: block;
+	    color: inherit;
+	    font: inherit;
+	    margin: 0;
+	    padding-left: 10px;
+    }
+    .field .password{
+		height: 0.933rem;
+	    line-height:0.933rem;
+	    color: rgb(125,125,125);
+	    border:1px solid  #BDBDBD;
+	    width: 100%;
+	    display: block;
+	    color: inherit;
+	    font: inherit;
+	    margin: 0;
+	    padding-left: 10px;
+    }
+    a{
+    	text-decoration: none;
+    }
+	.botton{
+		height: 1.2rem;
+		display: block;
+	    width: 100%;
+	   	line-height: 1.2rem;
+	    margin-top: 0.6rem;
+	    margin-bottom:0.8rem;
+	    font-size: 0.4rem;
+	    background-color: green;
+	    border-radius: 0.08rem;
+	    color: #fff;
+	    text-align: center;
+
+	}
+	.footer{
+		width: 8.133rem;
+		height: 0.66rem;
+		text-align: center;
+	    color: #9A9A9A;
+	    margin-top:0.533rem;
+	    background-color: #fff;
+	}
+	.icon{
+		display: inline-block;
+	    width: 0.586rem;
+	    height: 0.586rem;
+	    background-image:url(./image/1.png);
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    vertical-align: middle;
+	    margin-left:1.6rem;
+	    font-style: italic;
+	    float: left;
+
+	}
+	.footer span a{
+		display: inline-block;
+	    line-height: 0.586rem;
+	    vertical-align: middle;
+	    color: #9A9A9A;
+	    font-size: 0.48rem;
+	    float: left;
+	    margin-left: 0.266rem;
+
+	}
+	.footer em{
+		display: inline-block;
+	    vertical-align: middle;
+	    margin-left:0.3733rem;
+	    margin-right:0.266rem;
+	    height:0.667rem;
+	    overflow: hidden;
+	 	font-style: normal;
+	    float: left;
+ 
+
+	}
+	.footer .other a{
+		display: inline-block;
+	    line-height: 0.586rem;
+	    vertical-align: middle;
+	    color: #9A9A9A;
+	    font-size: 0.48rem;
+	    float: left;
+	    
+	}
+	a{
+		text-decoration: none;
+	}
+
+
+	
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body>
+	<div class="wrap">
+		<div class="logo">
+			<img src="https://img3.doubanio.com/f/accounts/fc64cace3f8307387d4009ef8c4fd63951f53920/pics/logos/douban@2x.png" alt="">
+		</div>
+		<div class="main">
+			<form class="wechat-form">
+				<div class="field">
+				
+					<input class="phone"  placeholder="手机号 / 邮箱">
+					<input class="password"  placeholder="密码">
+
+					<div class="botton">登录</div>
+				</div>
+			</form>
+
+		</div>
+		<div class="footer">
+			<i class="icon"></i>
+			<span><a href="./微信/微信.html">微信</a></span>
+			<em>|</em>
+			<span class="other"><a href="./其他方式登录/其他方式登录.html">其他方式登录</a></span>
+		</div>
+	</div>
+
+  
+</div>
+
+
+<script type="text/javascript">
+	$(function(){
+		var args = new Object();
+		args = GetUrlParms();
+		console.log(args);
+		var referurl = args.referurl; 
+		$(".botton").click(function(){
+				var phoneInfo = $(".phone").val();
+	 			var passwordInfo = $(".password").val();
+
+			$.ajax({
+	            url: "http://dbshop.com/index.php/Api/user/dologin ",
+		        type: "POST",
+		        dataType: "json",
+		        data: {
+		        	phone:phoneInfo,
+		        	password:passwordInfo
+	            },
+	          	success: function(res){
+	          		if(res.error_no == 0){
+	          			console.log(referurl);
+	  					localStorage.setItem("name",res.data.info.name);
+	 					localStorage.setItem("phone",res.data.info.phone);
+	 					localStorage.setItem("token",res.data.info.token);
+	 					alert("登陆成功")
+	 					location.href= referurl;
+
+				}
+		         else {
+              		alert(res.msg);
+            	}
+		    },
+		    
+		    	error: function(){
+		            alert("网络错误");
+		        }
+		})
+
+})
+		
+
+
+
+
+
+
+
+	})
+	function GetUrlParms()    
+	{
+    var args=new Object();   
+    var query=location.search.substring(1);//获取查询串  
+    console.log(query); 
+    var pairs=query.split("&");//在逗号处断开   
+    for(var   i=0;i<pairs.length;i++)   
+    {   
+        var pos=pairs[i].indexOf('=');//查找name=value   
+        if(pos==-1)   continue;//如果没有找到就跳过   
+        var argname=pairs[i].substring(0,pos);//提取name   
+        var value=pairs[i].substring(pos+1);//提取value   
+        args[argname]=unescape(value);//存为属性   
+    }
+    return args;
+	}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+</body>
+</html>

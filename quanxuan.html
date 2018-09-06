@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="./jquery.js"></script>
+</head>
+
+
+
+
+
+<body>
+	<div id="checkBoxList">  
+            <input type="checkbox" value="项羽"/>项羽<br>  
+            <input type="checkbox" value="范增"/>范增<br>  
+            <input type="checkbox" value="龙且"/>龙且<br>  
+            <input type="checkbox" value="刘邦"/>刘邦<br>  
+            <input type="checkbox" value="萧何"/>萧何<br>  
+            <input type="checkbox" value="韩信"/>韩信<br>  
+        </div>  
+        <input type="checkbox" value="全选" id="selectAll"/>全选  
+        <input type="checkbox" value="全不选" id="unSelect"/>全不选  
+        <input type="checkbox" value="反选" id="reverseSelect"/>反选  <div id="checkBoxList">  
+            
+
+
+
+<script type="text/javascript">
+	$("#checkBoxList :checkbox").attr("checked", true);
+	// 改行代码里':'前有一个空格(若空格在后，好像函数也不能执行)，而且是必须的  
+	$(function() {  
+                $("#selectAll").click(function(){  
+                    $("#checkBoxList :checkbox").attr("checked", true);  
+                });  
+                $("#unSelect").click(function(){  
+                    $("#checkBoxList :checkbox").attr("checked", false);  
+                });  
+                $("#reverseSelect").click(function(){  
+                    $("#checkBoxList :checkbox").each(function(){  
+                        $(this).attr("checked", !$(this).attr("checked"));  
+                    });  
+                });  
+            });  
+		
+
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册</title>
+	<script type="text/javascript" src="./js/flexible.js"></script>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+</head>
+<style type="text/css">
+	div,html,body{
+		margin:0;
+		padding: 0;
+	}
+	body {
+		font-size: 15px;
+    	font-family: Helvetica,Arial,sans-serif;
+	}
+	.content-all {
+		height: 360px;
+		margin-top: 20px;
+	}
+	.content {
+		height: 340px;
+		padding: 0 20px 20px 20px;
+	}
+	.welcome {
+		color: #42bd56;
+    	font-size: 40px;
+    	margin: 10% 0 9%;
+    	font-weight: 300;
+    	text-align: center;
+	}
+	form {
+		height: 223px;
+	}
+	.input {
+		color: #494949;
+    	height: 44px;
+    	background: #fff;
+    	border: 1px solid #d7d7d7;
+    	overflow: hidden;
+    	position: relative;
+    	border-top-left-radius: 4px;
+    	border-top-right-radius: 4px;
+
+	}
+	
+	
+	.phone{
+		border: 0 none;
+    	width: 96%;
+    	background: #fff;
+    	height: 30px;
+    	line-height: 30px;
+    	padding: 0 0 0 10px;
+    	margin-top: 7px;
+    	outline: 0;
+    	font-size: 15px;
+    	position: relative;
+    	border: 1px solid #d7d7d7;
+    	height: 44px;
+	} 
+	.password{
+		border: 0 none;
+    	width: 96%;
+    	background: #fff;
+    	height: 30px;
+    	line-height: 30px;
+    	padding: 0 0 0 10px;
+    	margin-top: 7px;
+    	outline: 0;
+    	font-size: 15px;
+    	position: relative;
+    	border: 1px solid #d7d7d7;
+    	height: 44px;
+	} 
+	.name {
+		border: 0 none;
+    	width: 96%;
+    	background: #fff;
+    	height: 30px;
+    	line-height: 30px;
+    	padding: 0 0 0 10px;
+    	margin-top: 7px;
+    	outline: 0;
+    	font-size: 15px;
+    	position: relative;
+    	border: 1px solid #d7d7d7;
+    	height: 44px;
+	} 
+
+	}
+	.opt{
+		width: 27px;
+		height: 18px;
+		
+	}
+	.opt img {
+		width: 27px;
+		height: 18px;
+		position: absolute;
+		top:190px;
+		right: 30px;
+	}
+	
+	.opt-area {
+    	margin-top: 10px;
+	}
+	.btn {
+	    font-size: 15px;
+	    border-radius: 3px;
+	    border: 0 none;
+	    background: #42bd56;
+	    display: block;
+	    width: 100%;
+	    height: 44px;
+	    line-height: 44px;
+	    color: #fff;
+	   	text-align: center;
+	    transition: all 0.3s ease-out;
+	    text-transform: none;
+		overflow: visible;
+		font: inherit;
+    	margin: 0;
+    	padding: 1px 6px;
+	}
+	
+	.agreement {
+	    font-size: 14px;
+	    color: #ccc;
+	    text-align: center;
+	}
+	.agreement a {
+	    text-decoration: underline;
+	    color: #ccc;
+	}
+	.open-app {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 15px;
+	    color: #42bd56;
+	    text-decoration: none;
+	}
+	a {
+		text-decoration:none;
+		font-size: 16px;
+		color: #fff;
+	}
+	.ddd{
+  		width: 120px;
+  		height: 40px;
+  		background-color: rgba(0,0,0,0.5);
+  		position: fixed;
+  		top:180px;
+  		border-radius: 4px;
+  		left: 120px;
+  		color: #fff;
+  		font-size: 12px;
+  		text-align: center;
+  		line-height: 40px;
+  	}
+  	.hidde {
+  		display: none;
+  	}
+	
+</style>
+<body>
+	<div class="content-all">
+		<div class="content">
+			<h1 class="welcome" data-reactid=".0.0.0.1">欢迎加入豆瓣</h1>
+		<form action="#">
+			
+				<input  type="text" name ="phone" placeholder="手机号 / 邮箱" class="phone">
+			
+			<!-- 隐藏密码 -->
+				
+		       
+		        <input type="password" id="demo_input" placeholder="Password"/  class="password">
+		        <span class="opt">
+		        	 <img id="demo_img" onclick="hideShowPsw()" src="./img/1.png">
+		        </span>
+    		
+   
+				<input name="alias" type="text" placeholder="昵称" class="name">
+			
+			<div class="opt-area" >
+				<button class="btn">
+				<a href="#">
+						注册
+				</a></button>
+				<p class="agreement center">
+					<span data-reactid=".0.0.0.2.3.1.0">点击「下一步」代表你已阅读并同意</span>
+					<a href="https://www.douban.com/about/agreement">用户使用协议</a>
+				</p>
+			</div>
+			<div class="ddd hidde">注册成功</div>
+		</form>
+		</div>
+		<a class="open-app"  href="#">登录豆瓣</a>
+		
+	</div>
+<script type="text/javascript">  
+
+   // 密码的可见不可见
+    var demoImg = document.getElementById("demo_img");
+    var demoInput = document.getElementById("demo_input");
+    function hideShowPsw(){
+        if (demoInput.type == "password") {
+            demoInput.type = "text";
+          
+        }else {
+            demoInput.type = "password";
+           
+        }
+    
+		}
+	$(function(){
+	   $(".btn").click(function(){
+     	$(".ddd").show();
+     	// val（）仅仅是input的取值
+	     	var nameInfo = $(".name").val();
+	     	var phoneInfo = $(".phone").val();
+	 		var passwordInfo = $(".password").val();
+			$.ajax({
+	         	url: "http://dbshop.com/index.php/Api/user/doreg ",
+		        type: "POST",
+		        dataType: "json",
+		        data: {
+		        	phone:phoneInfo,
+		        	password:passwordInfo,
+		        	username:nameInfo
+	            },
+	          	success: function(res){
+	          		// 标题
+  				if(res.error_no == 0){
+
+  						location.href="./登录/登录页面.html"
+  				}
+		         else {
+              		alert(res.msg);
+            	}
+		    },
+		    
+		    	error: function(){
+		            alert("网络错误");
+		        }
+		})
+			})
+
+})
+</script>  
+
+</body>
+</html>

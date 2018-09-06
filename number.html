@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="./jquery.js"></script>
+</head>
+<style type="text/css">
+	.jian {
+   		background-color: #f7f7f7;
+   		border:1px solid #e4e4e4;;
+   		padding:0 8px;
+   }
+   .jia {
+   		background-color: #f7f7f7;
+   		border:1px solid #e4e4e4;
+   		padding:0 8px;
+   }
+   .num-all {
+   		margin-top:10px;
+   		display: inline-block;
+   }
+   .num {
+   		padding:0 8px;
+   		border-bottom:1px solid #e4e4e4;
+   		border-top:1px solid #e4e4e4;
+   	}
+</style>
+<body>
+	<div class="num-all">
+						<span class="jian">-</span>
+						<span class="num">1</span>
+						<span class="jia">+</span>
+
+	</div>
+	<script type="text/javascript">
+		
+
+
+		$(function(){
+			
+      		$(".jian").click(function(){
+		        var num = parseInt($(".num").text());
+		        if(num == 1){
+		          return false;
+		        }else {
+		          $(".num").text(num-1)
+		        }
+		      	});
+			$(".jia").click(function(){
+					 var num = parseInt($(".num").text());
+					  $(".num").text(num+1);
+				  
+			});
+			})
+	</script>
+
+</body>
+</html>

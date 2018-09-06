@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>购物车</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=1.0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="./js/flexible.js"></script>
+	<script src="./js/jquery.js"></script>
+</head>
+<style type="text/css">
+	div,
+	body,
+	html,
+	p{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background-color: rgb(247,247,247);
+	}
+	.header {
+		height: 1.3333rem;
+		background-color: #0aa082;
+	}
+	i{
+		list-style: none;
+	}
+	.title {
+		color: #fff;
+		font-size: 23px;
+		font-family: "market-ui-iconfont" !important;
+		font-style: normal;
+		display: inline-block;
+		font-weight: 800;
+		margin-left: 15px;
+		line-height: 1.333rem;
+	}
+	.content {
+		height: 152px;
+		border-bottom: 1px solid rgb(247,247,247);
+	}
+	.content .one {
+		height: 45px;
+		background-color: rgb(255,255,255);
+		position: relative;
+	}
+	.icon {
+		display: inline-block;
+		border:1px solid #bdbdbd;
+		width: 15px;
+		height: 18px;
+		margin: 0 15px;
+		margin-top: 16px;
+	}
+	.icon-selected {
+		
+    	background-color: #0aa082;
+    	
+	}
+	.douban {
+		font-size: 14px;
+		color: #5c5c5c;
+		position: absolute;
+		margin-top: 15px;
+	}
+	.content .two {
+		height: 106px;
+		margin-top: 5px;
+		background-color: #fff;
+		position: relative;
+	}
+	.icon-two {
+		display: inline-block;
+		border:1px solid #bdbdbd;
+		width: 15px;
+		height: 15px;
+		margin: 0 15px;
+		margin-top: 40px;
+
+	}
+	a {
+		text-decoration: none;
+	}
+	.logo {
+		width: 70px;
+		height: 70px;
+		position: absolute;
+	}
+	.logo img {
+		width: 70px;
+		height: 70px;
+		margin-top: 10px;
+	}
+	.desc {
+		display: inline-block;
+		position: absolute;
+		margin-left: 82px;
+		height: 92px;
+		margin-top: 14px;
+
+	}
+	.desc .shoucang {
+		font-size: 14px;
+		color: #5c5c5c;
+		display: inline-block;
+	}
+	.desc .color {
+		font-size: 14px;
+		color: #5c5c5c;
+		
+	}
+	.del {
+		display: inline-block;
+		margin-left: 130px;
+		font-size: 14px;
+		color: #5c5c5c;
+	}
+	
+    .num-all {
+    	font-size: 20px;
+    	margin-top:5px;
+    	display: inline-block;
+    	
+    }
+    .jian {
+   		background-color: #f7f7f7;
+   		border:1px solid #e4e4e4;;
+   		padding:0 8px;
+   }
+   .jia {
+   		background-color: #f7f7f7;
+   		border:1px solid #e4e4e4;;
+   		padding:0 8px;
+   	}
+   	.price {
+   		display: inline-block;
+   		font-size: 15px;
+   		color: #f05f50;
+   		margin-left: 115px;
+   	}
+   	.bottom-all {
+   		width: 100%;
+   		height: 46px;
+   		/*background-color: pink;*/
+   		position: fixed;
+   		bottom:0;
+   		
+   	}
+   	.bottom {
+   		width: 100%;
+   		height: 46px;
+   		/*background-color: pink;*/
+   		position: relative;
+   		
+   	}
+
+   	.icon-three {
+		display: inline-block;
+		border:1px solid #bdbdbd;
+		width: 15px;
+		height: 15px;
+		margin: 0 15px;
+		margin-top: 15px;
+	}
+	.quanxuan {
+		font-size: 20px;
+		color: #5c5c5c;
+		position: absolute;
+		margin-top:10px;
+	}
+	.price-all {
+		display: inline-block;
+		margin-left:130px;
+		position: absolute;
+	}
+	.order-price {
+		font-size: 17px;
+		color: #f05f50;
+		margin-left: 20px;
+	}
+	.yunfei {
+		font-size: 10px;
+		color: #9a9a9a;
+	}
+	.select {
+		width: 120px;
+		height: 45px;
+		background-color: #9a9a9a;
+		color: #fff;
+		font-size: 16px;
+		text-align: center;
+		line-height: 45px;
+		position: absolute;
+		margin-left: 210px;
+		font-style: normal;
+
+
+	}
+	.hidden {
+		display: none;
+	}
+	.show {
+		display: none;
+	}
+
+
+
+
+
+</style>
+<body>
+	<div class="header">
+		<i class="title">豆瓣市集</i>
+	</div>
+	<div class="content">
+		<div class="one">
+			<input type="checkbox"  class="icon">
+			
+			
+			<span class="douban">豆瓣市集</span>
+		</div>
+		<div class="two" data-id="66">
+			<input type="checkbox"  class="icon-two">
+				<a class="logo" href="https://market.douban.com/campaign/collection">
+					<img src="https://img3.doubanio.com/view/dianpu_product_item/small/public/p1956124.jpg">
+				</a>
+			<div class="desc">
+				<div class="shoucang">豆瓣收藏夹</div>
+				<span class="del">删除</span>
+				<div class="color">森林绿</div>
+				<div class="num-all">
+						<span class="jian">-</span>
+						<span class="num">1</span>
+						<span class="jia">+</span>
+
+				</div>
+				<div class="price">￥99</div>
+			</div>
+		</div>
+		<div class="two" data-id="67">
+			<input type="checkbox"  class="icon-two">
+				<a class="logo" href="https://market.douban.com/campaign/collection">
+					<img src="https://img3.doubanio.com/view/dianpu_product_item/small/public/p1956124.jpg">
+				</a>
+			<div class="desc">
+				<div class="shoucang">豆瓣收藏夹</div>
+				<span class="del">删除</span>
+				<div class="color">森林绿</div>
+				<div class="num-all">
+						<span class="jian">-</span>
+						<span class="num">6</span>
+						<span class="jia">+</span>
+					</div>
+
+				<div class="price">￥99</div>
+			</div>
+		</div>
+		<div class="bottom-all">
+			<div class="bottom">
+				<input type="checkbox" id="all" class="icon-three">
+				<span class="quanxuan">全选</span>
+				<div class="price-all">
+					<div class="order-price">
+						￥0.00
+					</div>
+					<div class="yunfei">
+						（不含运费）
+					</div>
+				</div>
+				<i class="select">请选择</i>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$("#all").click(function(){
+			 	if ($("span").text() == "全选"){
+			 		$("span").text() == "取消"
+			 	}else
+			 	{ $("span").text() == "全选" }
+					$("input[type='checkbox']").attr("checked",!$("input[type='checkbox']").attr("checked"));
+      		});
+
+      		// 加减购物车
+      		$(".jian").click(function(){
+		        var numS = $(this).closest('.num-all').find('.num');
+		         var idNo = $(this).closest('.two').data('id');
+		          if(num ==1 ){
+		          	return false
+		          }
+		          else {
+		          	console.log(numS);
+					var tmp = numS.text();
+					console.log(tmp);
+					var num = parseInt(tmp);
+					console.log(num);
+					numS.text(num-1);
+					 	$.ajax({
+			           		url:'http://dbshop.com/index.php/Api/cart/edit ',
+							type: 'post',
+			           		dataType: 'json',
+			           		data: {
+			           			id: idNo,
+			           			is_add: 1,
+			           		},
+			           		success: function(res){
+			           			if(res.error_no == 0){
+			           			}else{
+			           				// alert(res.msg);
+			           			}
+			           		},
+			           		error: function(){
+			           			alert("网络错误!");
+			           		}
+			           	})
+		          }
+					
+
+		    });
+
+		$(".jia").click(function(){
+				var numS = $(this).closest('.num-all').find('.num');
+				 var idNo = $(this).closest('.two').data('id');
+		          if(num ==1 ){
+		          	return false
+		          }
+		          else {
+		          	console.log(numS);
+					var tmp = numS.text();
+					console.log(tmp);
+					var num = parseInt(tmp);
+					console.log(num);
+					numS.text(num+1);
+					 	$.ajax({
+			           		url:'http://dbshop.com/index.php/Api/cart/edit ',
+							type: 'post',
+			           		dataType: 'json',
+			           		data: {
+			           			id: idNo,
+			           			is_add: 2,
+			           		},
+			           		success: function(res){
+			           			if(res.error_no == 0){
+			           			}else{
+			           				// alert(res.msg);
+			           			}
+			           		},
+			           		error: function(){
+			           			alert("网络错误!");
+			           		}
+			           	})
+		          }
+		})
+
+
+
+
+
+
+			// 购物车
+			
+		var userId =localStorage.getItem("token");
+			$.ajax({
+	  			"url":"http://dbshop.com/index.php/Api/cart/cartlist",
+	  			"type":"POST",
+	  			"data":{
+	  				token:userId
+	  			},
+	  			"dataType":"json",
+	  			success:function(res){
+	  				// 标题
+	  				if(res.error_code == 0){
+	  					var str="";
+	  					for(var i=0;i<res.data.cart.length;i++){
+	  						str+='<div class="two" data-id="'+res.data.cart[i].id+'"></div>'
+	  					}
+
+				}
+				 else {
+              		alert(res.message);
+            	}
+	  					
+	  			},
+		  			error: function(){
+	            		alert("网络错误");
+	            	}
+				
+				})
+			})
+
+		// 结算
+
+
+
+			
+				
+			
+
+				
+         
+			
+
+
+
+
+		
+
+
+
+
+
+	</script>
+
+</body>
+</html>

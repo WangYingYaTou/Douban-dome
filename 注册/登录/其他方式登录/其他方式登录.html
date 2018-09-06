@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>其他方式登录</title>
+	<script type="text/javascript" src="./flexible.js"></script>
+	<script type="text/javascript" src="./jquery.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+</head>
+<style type="text/css">
+div,html,.wripper,body,.header.mobile,input{
+	margin:0;
+	padding:0;
+}
+	.wripper{
+		width: 10rem;
+		height:8.586rem;
+	}
+	.header h1{
+		width: 10rem;
+		height: 1.226rem;
+		background: #fff;
+    	
+    	border-bottom: 0.026rem solid #eee;
+    	padding: 0 0.213rem;
+    	text-align: center;
+    	font-size: 0.48rem;
+    	font-weight: bold;
+    	/*粗体*/
+    	line-height:1.2rem;
+    	margin: 0 0 0.266rem 0;
+
+	}
+	.header a{
+		color: #42bd56;
+    	text-decoration: none;
+    	font-size:0.4rem;
+    	font-weight: normal;
+    	position: absolute;
+    	left: 0.48rem;
+    	top: 0;
+	}
+	.mobile{
+		width:10rem;
+		height: 7.36rem;
+		margin-top: 0.586rem;
+	}
+	.input .one{
+		width: 8.8rem;
+		height: 1.173rem;
+		display: inline-block;
+    	
+    	font-size:0.4rem;
+    	padding: 0 0.213rem;
+    	margin: 0 0.213rem 0 0.32rem;
+    	background: #fff;
+    	color: rgb(117,117,117);
+    	border: 0.026rem solid #ccc;
+    	border-radius: 0.08rem;
+    	line-height: 0.853rem;
+	}
+	.two{
+		cursor: pointer;
+    	font-size: 0.453rem;
+   		text-align: center;
+    	width: 9.253rem;
+    	height: 1.173rem;
+    	padding: 0.266rem 0.693rem;
+    	color: #ffffff;
+    	background: #17AA52;
+    	border: 0.026rem solid #17AA52;
+    	border-radius: 0.08rem;
+    	margin: 0.26rem 0.213rem 0 0.32rem;
+	}
+	.more-login-btn{
+		font-size:0.4rem;
+   		margin-top:0.4rem;
+   		color: #aaa;
+   		text-align: center;
+	}
+	.btn-wrapper a{
+		text-decoration: none;
+		margin-left: 0.026rem;
+	}
+	.btn-wrapper{
+		margin-top: 1.066rem;
+    	text-align: center;
+    	font-size: 0.4rem;
+    	color: #42bd56;
+	}
+</style>
+<body>
+	<div class="wripper">
+	
+	<div class="header">
+		<h1>
+			<a href="javascript:history.go(-1);">取消</a>登录豆瓣
+		</h1>
+	</div>
+	
+	<div class="mobile">
+		<form class="input">
+			<input class="one" type="text" name="form_email" value="邮箱 / 手机号 / 用户名" >
+			<input class="one" type="text" name="form_email" value="密码" >
+			<input class="two" type="submit" name="form_email" value="登录" >
+			<div class="more-login-btn">使用其他方式登录 &amp; 找回密码</div>
+			<div class="btn-wrapper">
+      		<a class="btn reg-btn" href="https://accounts.douban.com/register?redir=https%3A//m.douban.com/">
+        		注册豆瓣帐号
+     		 </a>
+      		<a class="btn open-app">下载豆瓣App</a>
+    </div>
+		</form>
+	</div>
+	</div>
+
+</body>
+</html>

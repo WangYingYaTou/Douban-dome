@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>豆瓣市集</title>
+	<script type="text/javascript" src="./flexible.js"></script>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/aaa.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+
+	<!-- 1rem=10px -->
+</head>
+<body>
+	<div class="head">
+		<div class="img-scroll">
+			<ul>
+				<li><img src="https://img3.doubanio.com/img/files/file-1523154034-0.jpg"></li>
+				<li><img src="https://img3.doubanio.com/img/files/file-1523429366-0.jpg"></li>
+				<li><img src="https://img3.doubanio.com/img/files/file-1521684961-1.jpg"></li>
+				<li><img src="https://img3.doubanio.com/img/files/file-1523154034-0.jpg"></li>
+				<li><img src="https://img3.doubanio.com/img/files/file-1523429366-0.jpg"></li>
+			</ul>
+		</div> 
+	</div>
+	<div class="user-bar clearfix">
+		<div class="border">
+		</div>
+		<div class="user-bar-left clearfix">
+			<a href="./登录/登录页面.html">
+			<span class="img-left"><img src="./img/2.png" alt=""></span>
+			<span class="gouwuche">购物车</span>
+		</a>
+		</div>
+		<div class="user-bar-right clearfix">
+			<div class="img-right"><img src="./img/3.png" alt=""></div>
+			<span class="shiji">我的市集</span>
+		</div>
+	</div>
+	<div class="list-head">
+		新品首发
+	</div>
+	<div class="list-content">
+		
+
+	<div class="product-card">
+		<div class="coffee">
+		</div>
+		<div class="coffee-info">
+			<p class="product-card-title">豆瓣精品挂耳咖啡-甜橙庄园系列</p>
+			<div class="product-card-desc">甄选COE获奖精品咖啡。花香浓郁<br>，果香四溢，回味甘甜。</div>
+			<div class="product-card-bottom"><div class="product-card-price"><span class="product-card-promote">￥56</span></div>
+			<div class="product-card-tags"><span class="product-card-tag" style="background-color: rgb(242, 190, 64);">新品</span></div>
+		</div>
+	</div>
+		
+		</div>
+
+
+	<!-- <div class="product-card">
+		<a href="">
+		<div class="coffee1">
+		</div>
+		<div class="coffee-info">
+			<p class="product-card-title">豆瓣精品挂耳咖啡-甜橙庄园系列</p>
+			<div class="product-card-desc">甄选COE获奖精品咖啡。花香浓郁<br>，果香四溢，回味甘甜。</div>
+			<div class="product-card-bottom">
+				<div class="product-card-price">
+					<span class="product-card-promote">￥56</span></div>
+			<div class="product-card-tags">
+				<span class="product-card-tag" style="background-color: rgb(242, 190, 64);">新品</span></div>
+		</div>
+		</div>
+		</a>
+	</div>
+	<div class="product-card">
+		<a href="">
+		<div class="coffee2">
+		</div>
+		<div class="coffee-info">
+			<p class="product-card-title">豆瓣精品挂耳咖啡-甜橙庄园系列</p>
+			<div class="product-card-desc">甄选COE获奖精品咖啡。花香浓郁<br>，果香四溢，回味甘甜。</div>
+			<div class="product-card-bottom">
+				<div class="product-card-price">
+					<span class="product-card-promote">￥56</span></div>
+			<div class="product-card-tags">
+				<span class="product-card-tag" style="background-color: rgb(242, 190, 64);">新品</span></div>
+		</div>
+		</div>
+		</a>
+	</div>
+	<div class="product-card">
+		<a href="">
+		<div class="coffee3">
+		</div>
+		<div class="coffee-info">
+			<p class="product-card-title">豆瓣收藏夹</p>
+			<div class="product-card-desc">甄选COE获奖精品咖啡。花香浓郁<br>，果香四溢，回味甘甜。</div>
+			<div class="product-card-bottom">
+				<div class="product-card-price">
+					<span class="product-card-promote">￥56</span></div>
+			<div class="product-card-tags">
+				<span class="product-card-tag" style="background-color: rgb(242, 190, 64);">新品</span></div>
+		</div>
+		</div>
+		</a>
+	</div>
+	<div class="product-card">
+		<a href="#">
+		<div class="coffee">
+		</div>
+		<div class="coffee-info">
+			<p class="product-card-title">豆瓣精品挂耳咖啡-甜橙庄园系列</p>
+			<div class="product-card-desc">甄选COE获奖精品咖啡。花香浓郁<br>，果香四溢，回味甘甜。</div>
+			<div class="product-card-bottom">
+				<div class="product-card-price">
+					<span class="product-card-promote">￥56</span></div>
+			<div class="product-card-tags">
+				<span class="product-card-tag" style="background-color: rgb(242, 190, 64);">新品</span></div>
+		</div>
+		</div>
+		</a>
+	</div>
+	<div class="product-card">
+		<a href="#">
+		<div class="coffee">
+		</div>
+		<div class="coffee-info">
+			<p class="product-card-title">豆瓣精品挂耳咖啡-甜橙庄园系列</p>
+			<div class="product-card-desc">甄选COE获奖精品咖啡。花香浓郁<br>，果香四溢，回味甘甜。</div>
+			<div class="product-card-bottom">
+				<div class="product-card-price">
+					<span class="product-card-promote">￥56</span></div>
+			<div class="product-card-tags">
+				<span class="product-card-tag" style="background-color: rgb(242, 190, 64);">新品</span></div>
+		</div>
+		</div>
+		</a>
+	</div>
+	<div class="product-card">
+		<a href="#">
+		<div class="coffee">
+		</div>
+		<div class="coffee-info">
+			<p class="product-card-title">豆瓣精品挂耳咖啡-甜橙庄园系列</p>
+			<div class="product-card-desc">甄选COE获奖精品咖啡。花香浓郁<br>，果香四溢，回味甘甜。</div>
+			<div class="product-card-bottom">
+				<div class="product-card-price">
+					<span class="product-card-promote">￥56</span></div>
+			<div class="product-card-tags">
+				<span class="product-card-tag" style="background-color: rgb(242, 190, 64);">新品</span></div>
+		</div>
+		</div>
+		</a>
+	</div> -->
+		
+	</div>
+		<div class="group">
+			<div class="group-head">
+				市集小组
+			</div>
+			<div class="group-topic-list">
+				<div class="group-topic-item">
+					<div class="group-topic-content">
+						<div class="group-topic-hot">
+							<div class="mui-icon"><img src="./img/4.png" alt=""></div>
+							<em>1069</em></div>
+							<h3 class="group-topic-title">【投票】纯色手机壳上，你喜欢什么样的豆瓣logo？</h3>
+							<span class="group-topic-img"></span>
+					</div>
+					<div class="group-topic-poster">
+						<img src="https://img3.doubanio.com/icon/u119347429-13.jpg">
+						<span class="douban">豆瓣市集</span>
+					</div>
+				</div>
+
+
+				<div class="group-topic-item">
+					<div class="group-topic-content">
+						<div class="group-topic-hot">
+							<div class="mui-icon"><img src="./img/4.png" alt=""></div>
+							<em>1069</em></div>
+							<h3 class="group-topic-title">【投票】纯色手机壳上，你喜欢什么样的豆瓣logo？</h3>
+							<span class="group-topic-img"></span>
+					</div>
+					<div class="group-topic-poster">
+						<img src="https://img3.doubanio.com/icon/u119347429-13.jpg">
+						<span class="douban">豆瓣市集</span>
+					</div>
+				</div>
+
+				<div class="group-topic-item">
+					<div class="group-topic-content">
+						<div class="group-topic-hot">
+							<div class="mui-icon"><img src="./img/4.png" alt=""></div>
+							<em>1069</em></div>
+							<h3 class="group-topic-title">【投票】纯色手机壳上，你喜欢什么样的豆瓣logo？</h3>
+							<span class="group-topic-img"></span>
+					</div>
+					<div class="group-topic-poster">
+						<img src="https://img3.doubanio.com/icon/u119347429-13.jpg">
+						<span class="douban">豆瓣市集</span>
+					</div>
+				</div>
+				<div class="group-topic-more">
+					<a href="https://m.douban.com/group/588598" target="_blank">查看更多讨论></a>
+				</div>
+			</div>
+			</div>
+			<div class="topics">
+				<div class="topics-header">热门活动</div>
+				<div class="all">
+					<ul>
+					<a href="https://www.douban.com/people/119347429/status/2122634564/?index=1&amp;r=topic">
+						<li class="topic-item">
+							<div class="_3kP-rt0_">
+								</div>
+								<div class="topic-content">
+									<div class="topic-title">#你是茶派还是酒派#</div>
+									<div class="topic-desc">送出50份壕礼：茶和酒你更青睐哪个呢？</div>
+									</div>
+							</li>
+						</a>
+
+					<a href="https://www.douban.com/people/119347429/status/2122634564/?index=1&amp;r=topic">
+						<li class="topic-item1">
+							<div class="_3kP-rt1_">
+								</div>
+								<div class="topic-content">
+									<div class="topic-title">#生成你的2018专属电影#</div>
+									<div class="topic-desc">点击输入对你有意义的日子，看看那天属于你的电影是哪一部吧！</div>
+									</div>
+							</li>
+						</a>
+
+					<a href="https://www.douban.com/people/119347429/status/2122634564/?index=1&amp;r=topic">
+						<li class="topic-item1">
+							<div class="_3kP-rt2_">
+								</div>
+								<div class="topic-content">
+									<div class="topic-title">#晒出你的2018豆瓣日历#</div>
+									<div class="topic-desc">它是否已和你共同开启新年的电影旅程了呢？</div>
+									</div>
+							</li>
+						</a>
+					<a href="https://www.douban.com/people/119347429/status/2122634564/?index=1&amp;r=topic">
+						<li class="topic-item1">
+							<div class="_3kP-rt0_">
+								</div>
+								<div class="topic-content">
+									<div class="topic-title">#你是茶派还是酒派#</div>
+									<div class="topic-desc">送出50份壕礼：茶和酒你更青睐哪个呢？</div>
+									</div>
+							</li>
+						</a>
+					<a href="https://www.douban.com/people/119347429/status/2122634564/?index=1&amp;r=topic">
+						<li class="topic-item1">
+							<div class="_3kP-rt0_">
+								</div>
+								<div class="topic-content">
+									<div class="topic-title">#你是茶派还是酒派#</div>
+									<div class="topic-desc">送出50份壕礼：茶和酒你更青睐哪个呢？</div>
+									</div>
+							</li>
+						</a>
+					<a href="https://www.douban.com/people/119347429/status/2122634564/?index=1&amp;r=topic">
+						<li class="topic-item1">
+							<div class="_3kP-rt0_">
+								</div>
+								<div class="topic-content">
+									<div class="topic-title">#你是茶派还是酒派#</div>
+									<div class="topic-desc">送出50份壕礼：茶和酒你更青睐哪个呢？</div>
+									</div>
+							</li>
+						</a>
+						<li class="footer-bar">
+							<a href="#" class="footer-bar-item">
+								<i class="mui-icon"><img src="./img/5.png"></i>
+								<em>购物说明</em>
+								</a>
+							<a class="footer-bar-item">
+									<i class="mui-icon"><img src="./img/6.png"></i>
+									<em>意见反馈</em>
+								</a>
+							<a class="footer-bar-item">
+									<i class="mui-icon"><img src="./img/7.png"></i>
+									<em>商务合作</em>
+								</a>
+									
+						</li>
+
+
+				</ul>
+				</div>
+				<div class="qqq">
+				  </div>
+				  <div class="ddd hide">
+					<div class="foot-bar ">
+						<div class="market">
+							<dl>
+								<dt>订单查询</dt>
+								<dd>PC端用户登录后点击页面右上角“个人中心”-“市集/纸书订单”查看；</dd>
+								<dd>App用户可点击App底部“我的”-“订单”-“市集订单”查看；</dd>
+								<dd>也可关注“豆瓣市集”微信公众号登录后查看。</dd>
+							</dl>
+							<dl>
+								<dt>订单查询</dt>
+								<dd>PC端用户登录后点击页面右上角“个人中心”-“市集/纸书订单”查看；</dd>
+								<dd>App用户可点击App底部“我的”-“订单”-“市集订单”查看；</dd>
+								<dd>也可关注“豆瓣市集”微信公众号登录后查看。</dd>
+							</dl>
+							<dl>
+								<dt>订单查询</dt>
+								<dd>PC端用户登录后点击页面右上角“个人中心”-“市集/纸书订单”查看；</dd>
+								<dd>App用户可点击App底部“我的”-“订单”-“市集订单”查看；</dd>
+								<dd>也可关注“豆瓣市集”微信公众号登录后查看。</dd>
+							</dl>
+
+						</div>
+						<div class="gengduo">
+							知道了
+						</div>
+
+					</div>
+				</div>
+
+				
+
+
+
+
+
+			</div>
+
+	
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+  	$(function(){
+  		function clickLeft(){
+				
+				$(".img-scroll ul").animate({
+					left: '-=10rem'
+					// 让左面至少留一个图片，以防开始向右滑动没有图片
+				},500,function(){
+					$(".img-scroll ul").css({"left":"-10rem"});
+					$(".img-scroll ul li").first().insertAfter($(".img-scroll ul li").last());
+					// 第一个图片放到第五个的后面，让他们连接上
+				})
+			};
+			$(".slide-button-prev").click(function(){
+				clickLeft()
+			});
+			// 隔一段时间执行某事setInterval,重复执行
+			var timer = setInterval(function(){
+				clickLeft()
+			},4000);
+			
+			$(".slide-button-prev").mouseover(function(){
+				clearInterval(timer)
+			});
+			$(".slide-button-prev").mouseout(function(){
+				timer = setInterval(function(){
+					clickLeft()
+				},40000);
+				
+			});
+			$(".footer-bar-item").click(function(){
+				$(".ddd").slideDown();
+				$(".foot-bar").slideDown();
+
+
+			});
+			$(".gengduo").click(function(){
+				$(".ddd").slideUp();
+				$(".foot-bar").slideUp();
+			})
+
+        $.ajax({
+          "url": "http://dbshop.com/index.php/Api/index/index",
+          "type": "GET",
+          "dataType": "json",
+          "data": {
+            },
+          success: function(res){
+            var str = "";
+            // 连接成功
+            if(res.error_no == 0){
+            	// 商品列表
+            	  var str = "";
+            	for(i=0;i<res.data.goods.length;i++){
+            		str+='<a href="./详情/详情页面.html?id='+res.data.goods[i].id+'"><div class="product-card"><div class="coffee"></div><div class="coffee-info"><p class="product-card-title">'+res.data.goods[i].goods_name+'</p><div class="product-card-desc">'+res.data.goods[i].goods_info+'</div><div class="product-card-bottom"><div class="product-card-price"><span class="product-card-promote">'+res.data.goods[i].price+'</span></div><div class="product-card-tags"><span class="product-card-tag" style="background-color: rgb(242, 190, 64);">'+res.data.goods[i].tag_id+'</span></div></div></div></a></div>'
+            	}
+              $(".list-content").html(str)
+              // 点击一个出现一个id页面
+               $(".product-card").click(function(){
+        			var id = $(this).data("id");
+        			location.href="./详情/详情页面.html ?id="+id  
+      			})
+
+              // 图片轮播(成功，只是后端给的图片访问不到)
+              // var sto="";
+	             //  for(i=0;i<res.data.banner.length;i++){
+	            	// 	str+='<div class="head"><div class="img-scroll"><ul><li><img src="'+res.data.banner[i].image+'"></li><li><img src="'+res.data.banner[i].image+'"></li><li><img src="'+res.data.banner[i].image+'"></li><li><img src="'+res.data.banner[i].image+'"></li><li><img src="'+res.data.banner[i].image+'"></li></ul></div> </div>'
+	            	// }
+	             //  $(".head").html(sto)
+
+
+
+
+
+
+               }
+			// 连接失败
+            else {
+              	alert(res.message);
+            }
+          },
+
+          // 网络连接错误
+          error: function(){
+            alert("网络错误");
+          }
+        
+
+	})
+        })
+  </script>
+
+
+
+
+</body>
+</html>
